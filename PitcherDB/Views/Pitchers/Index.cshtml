@@ -1,0 +1,75 @@
+﻿@model IEnumerable<PitcherDB.Models.Pitcher>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fastball)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Curve)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Slider)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeUp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sinker)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Splitter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cutter)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fastball)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Curve)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Slider)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeUp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sinker)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Splitter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cutter)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PitcherID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PitcherID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PitcherID })
+        </td>
+    </tr>
+}
+
+</table>

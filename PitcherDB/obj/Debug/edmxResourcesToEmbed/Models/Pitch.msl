@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PitchersModelStoreContainer" CdmEntityContainer="PitchersEntities">
+    <EntitySetMapping Name="Pitchers">
+      <EntityTypeMapping TypeName="PitchersModel.Pitcher">
+        <MappingFragment StoreEntitySet="Pitchers">
+          <ScalarProperty Name="PitcherID" ColumnName="PitcherID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Fastball" ColumnName="Fastball" />
+          <ScalarProperty Name="Curve" ColumnName="Curve" />
+          <ScalarProperty Name="Slider" ColumnName="Slider" />
+          <ScalarProperty Name="ChangeUp" ColumnName="ChangeUp" />
+          <ScalarProperty Name="Sinker" ColumnName="Sinker" />
+          <ScalarProperty Name="Splitter" ColumnName="Splitter" />
+          <ScalarProperty Name="Cutter" ColumnName="Cutter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
